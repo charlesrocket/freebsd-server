@@ -33,7 +33,6 @@ upgrade_packages: true
 
 # Packages
 pkgng_packages:
-  - bastille
   - chkrootkit
   - clamav
   - curl
