@@ -1,7 +1,4 @@
 ---
-# Settings
-timezone: "America/Los_Angeles"
-
 # Dotfiles
 dotfiles_repo: "https://github.com/charlesrocket/dotfiles.git"
 dotfiles_repo_version: fbsd-server
@@ -24,6 +21,7 @@ poudriere: false
 bastille_zfs_enable: "YES"
 bastille_zfs_zpool: "zroot"
 hostname:
+timezone: "America/Los_Angeles"
 make_config:
   - "MAKE_JOBS_NUMBER?=3"
 
