@@ -21,8 +21,9 @@ accounting: false
 bastille: false
 poudriere: false
 
+bastille_zfs_enable: "YES"
+bastille_zfs_zpool: "zroot"
 hostname:
-
 make_config:
   - "MAKE_JOBS_NUMBER?=3"
 
