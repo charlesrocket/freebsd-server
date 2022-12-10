@@ -19,6 +19,9 @@
     - role: sys
       become: true
 
+    - role: pf
+      become: true
+
     - role: bastille
       when: bastille
       become: true
