@@ -15,7 +15,7 @@ dotfiles_files:
 # Configuration
 auto_fetch: false
 accounting: false
-bastille: false
+bastille: true
 poudriere: false
 
 bastille_zfs_enable: "YES"
