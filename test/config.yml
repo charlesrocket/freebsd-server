@@ -3,8 +3,6 @@ accounting: true
 bastille: true
 poudriere: true
 
-bastille_zfs_enable: ""
-bastille_zfs_zpool: ""
 hostname: test
 set_security_level: true
 security_level: 3
