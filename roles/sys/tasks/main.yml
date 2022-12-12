@@ -213,10 +213,11 @@
 
 - name: Fix file permissions
   ansible.builtin.file:
-    path: "{{ item }}"
+    path: "{{ item.path }}"
     owner: root
     group: wheel
-    mode: '0600'
+    mode: "{{ item.mode }}"
   loop:
-    - /etc/crontab
-    - /etc/ssh/sshd_config
+    - { path: /etc/cron.d, mode: '0700' }
+    - { path: /etc/crontab, mode: '0600' }
+    - { path: /etc/ssh/sshd_config, mode: '0600' }
