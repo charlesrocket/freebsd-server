@@ -113,6 +113,12 @@
     state: present
     value: '0'
 
+- name: Enable sshd
+  community.general.sysrc:
+    name: sshd_enable
+    value: "YES"
+    state: present
+
 - name: Enable H-TCP
   community.general.sysrc:
     name: cc_htcp_load
