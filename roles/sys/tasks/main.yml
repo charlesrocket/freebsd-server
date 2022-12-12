@@ -218,4 +218,5 @@
     group: wheel
     mode: '0600'
   loop:
+    - /etc/crontab
     - /etc/ssh/sshd_config
