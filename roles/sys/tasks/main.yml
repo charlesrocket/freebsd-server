@@ -113,7 +113,7 @@
     state: present
     value: '0'
 
-- name: "Enaable sshd? {{ sshd_enable }}"
+- name: "{{ (sshd_enable == 'YES') | ternary('Enable sshd', 'Disable sshd') }}"
   community.general.sysrc:
     name: sshd_enable
     value: "{{ sshd_enable }}"
@@ -184,12 +184,6 @@
     state: present
     value: "beastie"
     path: /boot/loader.conf
-
-- name: Enable sshd
-  community.general.sysrc:
-    name: sshd_enable
-    value: "YES"
-    state: present
 
 - name: Set syslogd flags
   community.general.sysrc:
