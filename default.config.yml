@@ -60,7 +60,6 @@ pkgng_packages:
   - pciutils
   - pv
   - pwgen
-  - rbenv
   - rkhunter
   - screen
   - tmux
