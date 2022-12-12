@@ -113,10 +113,10 @@
     state: present
     value: '0'
 
-- name: Enable sshd
+- name: "Enaable sshd? {{ sshd_enable }}"
   community.general.sysrc:
     name: sshd_enable
-    value: "YES"
+    value: "{{ sshd_enable }}"
     state: present
 
 - name: Enable H-TCP

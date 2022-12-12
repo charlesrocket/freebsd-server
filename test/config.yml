@@ -4,6 +4,7 @@ bastille: true
 poudriere: true
 
 hostname: test
+sshd_enable: "YES"
 set_security_level: true
 security_level: 3
 
