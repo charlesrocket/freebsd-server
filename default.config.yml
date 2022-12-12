@@ -43,7 +43,6 @@ pkgng_packages:
   - exfat-utils
   - figlet
   - gawk
-  - git
   - gnupg
   - gzip
   - htop
