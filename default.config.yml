@@ -40,7 +40,6 @@ pkgng_packages:
   - destroy
   - devcpu-data
   - diffutils
-  - direnv
   - exfat-utils
   - figlet
   - gawk
