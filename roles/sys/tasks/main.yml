@@ -210,3 +210,12 @@
     value: "{{ security_level }}"
     state: present
   when: set_security_level
+
+- name: Fix file permissions
+  ansible.builtin.file:
+    path: "{{ item }}"
+    owner: root
+    group: wheel
+    mode: '0600'
+  loop:
+    - /etc/ssh/sshd_config
