@@ -32,6 +32,8 @@
 
     - role: common
 
+    - role: charlesrocket.git
+
     - role: charlesrocket.dotfiles
 
     - role: acct
