@@ -1,15 +1,15 @@
-NO_ZFS="{{ poudriere_zfs | ternary('no', 'yes') }}"
-ZPOOL="{{ poudriere_zpool }}"
-ZROOTFS="{{ poudriere_zrootfs }}"
+NO_ZFS={{ poudriere_zfs | ternary('no', 'yes') }}
+ZPOOL={{ poudriere_zpool }}
+ZROOTFS={{ poudriere_zrootfs }}
 
-FREEBSD_HOST="{{ poudriere_host }}"
+FREEBSD_HOST={{ poudriere_host }}
 
 CCACHE_DIR=/var/cache/ccache
 
 POUDRIERE_DATA=${BASEFS}/data
-DISTFILES_CACHE="{{ poudriere_distfiles }}"
+DISTFILES_CACHE={{ poudriere_distfiles }}
 CHECK_CHANGED_OPTIONS=verbose
 CHECK_CHANGED_DEPS=yes
 
-PKG_REPO_SIGNING_KEY="{{ poudriere_signing_key }}"
-URL_BASE="{{ poudriere_url_base }}"
+PKG_REPO_SIGNING_KEY={{ poudriere_signing_key }}
+URL_BASE={{ poudriere_url_base }}
