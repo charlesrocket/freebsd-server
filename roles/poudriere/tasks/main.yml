@@ -14,6 +14,13 @@
     autoremove: true
     cached: false
 
+- name: Ensure ccache is installed
+  community.general.pkgng:
+    state: present
+    name: ccache
+    autoremove: true
+    cached: false
+
 - name: Copy poudriere config
   ansible.builtin.template:
     src: poudriere.conf.j2
