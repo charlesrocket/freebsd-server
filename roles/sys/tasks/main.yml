@@ -114,10 +114,10 @@
     state: present
     value: '0'
 
-- name: "{{ (sshd_enable == 'YES') | ternary('Enable sshd', 'Disable sshd') }}"
+- name: "{{ sshd | ternary('Enable sshd', 'Disable sshd') }}"
   community.general.sysrc:
     name: sshd_enable
-    value: "{{ sshd_enable }}"
+    value: "{{ sshd | ternary('YES', 'NO') }}"
     state: present
 
 - name: Enable H-TCP

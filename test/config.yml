@@ -7,7 +7,7 @@ pf: true
 poudriere: true
 
 hostname: test
-sshd_enable: "YES"
+sshd: true
 set_security_level: true
 security_level: 3
 timezone: "America/Los_Angeles"

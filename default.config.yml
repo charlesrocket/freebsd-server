@@ -20,6 +20,7 @@ git: false
 pf: true
 poudriere: false
 set_security_level: false
+sshd: true
 
 bastille_zfs_enable: "YES"
 bastille_zfs_zpool: zroot
@@ -33,7 +34,6 @@ poudriere_zfs: true
 poudriere_zpool: zroot
 poudriere_zrootfs: /usr/local/poudriere
 security_level: 3
-sshd_enable: "YES"
 timezone: America/Los_Angeles
 
 # Keep packages up to date
