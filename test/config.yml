@@ -7,5 +7,7 @@ hostname: test
 sshd_enable: "YES"
 set_security_level: true
 security_level: 3
+make_config:
+  - "MAKE_JOBS_NUMBER?=3"
 
 upgrade_packages: false

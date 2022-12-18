@@ -24,8 +24,6 @@ hostname:
 sshd_enable: "YES"
 timezone: "America/Los_Angeles"
 make_config:
-  - "MAKE_JOBS_NUMBER?=3"
-
 set_security_level: false
 security_level: 3
 
