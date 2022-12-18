@@ -22,14 +22,6 @@
     - role: pf
       become: true
 
-    - role: bastille
-      when: bastille
-      become: true
-
-    - role: poudriere
-      when: poudriere
-      become: true
-
     - role: common
 
     - role: charlesrocket.git
@@ -40,4 +32,12 @@
 
     - role: acct
       when: accounting
+      become: true
+
+    - role: bastille
+      when: bastille
+      become: true
+
+    - role: poudriere
+      when: poudriere
       become: true
