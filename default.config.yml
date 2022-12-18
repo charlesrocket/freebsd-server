@@ -27,11 +27,12 @@ hostname:
 make_config:
 poudriere_distfiles: "/usr/ports/distfiles"
 poudriere_host: "ftp://ftp.freebsd.org"
+poudriere_signing_key: "/usr/local/etc/ssl/keys/poudriere.key"
 poudriere_zpool: "zroot"
 poudriere_zrootfs: "/usr/local/poudriere"
+security_level: 3
 sshd_enable: "YES"
 timezone: "America/Los_Angeles"
-security_level: 3
 
 # Keep packages up to date
 upgrade_packages: true
