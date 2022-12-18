@@ -51,3 +51,4 @@
     group: wheel
     mode: 0644
   become: true
+  when: make_config
