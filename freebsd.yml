@@ -33,7 +33,7 @@
     - role: common
 
     - role: charlesrocket.git
-      when: git
+      when: git or poudriere
 
     - role: charlesrocket.dotfiles
       when: dotfiles
