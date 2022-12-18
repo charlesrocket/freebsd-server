@@ -5,7 +5,6 @@
     state: present
     name:
       - poudriere
-      - nginx
       - ccache
     autoremove: true
     cached: false
@@ -14,12 +13,5 @@
   ansible.builtin.template:
     src: poudriere.conf.j2
     dest: /usr/local/etc/poudriere.conf
-    owner: root
-    mode: 0644
-
-- name: Copy nginx config
-  ansible.builtin.template:
-    src: nginx.conf.j2
-    dest: /usr/local/etc/nginx/nginx.conf
     owner: root
     mode: 0644
