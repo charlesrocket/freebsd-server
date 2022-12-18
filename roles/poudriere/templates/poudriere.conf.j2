@@ -1,3 +1,4 @@
+NO_ZFS="{{ poudriere_zfs | ternary('no', 'yes') }}"
 ZPOOL="{{ poudriere_zpool }}"
 ZROOTFS="{{ poudriere_zrootfs }}"
 
