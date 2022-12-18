@@ -24,13 +24,13 @@ set_security_level: false
 bastille_zfs_enable: "YES"
 bastille_zfs_zpool: "zroot"
 hostname:
+make_config:
 poudriere_distfiles: "/usr/ports/distfiles"
 poudriere_host: "ftp://ftp.freebsd.org"
 poudriere_zpool: "zroot"
 poudriere_zrootfs: "/usr/local/poudriere"
 sshd_enable: "YES"
 timezone: "America/Los_Angeles"
-make_config:
 security_level: 3
 
 # Keep packages up to date
