@@ -22,7 +22,7 @@ poudriere: false
 set_security_level: false
 sshd: true
 
-bastille_zfs_enable: "YES"
+bastille_zfs_enable: true
 bastille_zfs_zpool: zroot
 hostname:
 make_config:
