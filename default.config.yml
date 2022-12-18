@@ -19,6 +19,7 @@ bastille: true
 dotfiles: false
 git: false
 poudriere: false
+set_security_level: false
 
 bastille_zfs_enable: "YES"
 bastille_zfs_zpool: "zroot"
@@ -26,7 +27,6 @@ hostname:
 sshd_enable: "YES"
 timezone: "America/Los_Angeles"
 make_config:
-set_security_level: false
 security_level: 3
 
 # Keep packages up to date
