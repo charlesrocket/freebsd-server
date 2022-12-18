@@ -33,8 +33,10 @@
     - role: common
 
     - role: charlesrocket.git
+      when: git
 
     - role: charlesrocket.dotfiles
+      when: dotfiles
 
     - role: acct
       when: accounting

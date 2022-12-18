@@ -1,6 +1,8 @@
 auto_fetch: true
 accounting: true
 bastille: true
+dotfiles: true
+git: true
 poudriere: true
 
 hostname: test

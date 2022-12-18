@@ -16,6 +16,8 @@ dotfiles_files:
 auto_fetch: false
 accounting: false
 bastille: true
+dotfiles: false
+git: false
 poudriere: false
 
 bastille_zfs_enable: "YES"
