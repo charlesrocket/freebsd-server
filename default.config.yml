@@ -25,6 +25,7 @@ bastille_zfs_enable: "YES"
 bastille_zfs_zpool: "zroot"
 hostname:
 poudriere_distfiles: "/usr/ports/distfiles"
+poudriere_host: "ftp://ftp.freebsd.org"
 poudriere_zpool: "zroot"
 poudriere_zrootfs: "/usr/local/poudriere"
 sshd_enable: "YES"
