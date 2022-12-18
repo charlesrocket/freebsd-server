@@ -1,23 +1,12 @@
 ---
 
-- name: Ensure poudriere is installed
+- name: Ensure packages are installed
   community.general.pkgng:
     state: present
-    name: poudriere
-    autoremove: true
-    cached: false
-
-- name: Ensure nginx is installed
-  community.general.pkgng:
-    state: present
-    name: nginx
-    autoremove: true
-    cached: false
-
-- name: Ensure ccache is installed
-  community.general.pkgng:
-    state: present
-    name: ccache
+    name:
+      - poudriere
+      - nginx
+      - ccache
     autoremove: true
     cached: false
 
