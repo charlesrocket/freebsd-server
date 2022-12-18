@@ -18,6 +18,7 @@ accounting: false
 bastille: true
 dotfiles: false
 git: false
+pf: true
 poudriere: false
 set_security_level: false
 

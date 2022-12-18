@@ -20,6 +20,7 @@
       become: true
 
     - role: pf
+      when: bastille or pf
       become: true
 
     - role: common

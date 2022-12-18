@@ -3,6 +3,7 @@ accounting: true
 bastille: true
 dotfiles: true
 git: true
+pf: true
 poudriere: true
 
 hostname: test
