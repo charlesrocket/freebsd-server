@@ -28,7 +28,6 @@ hostname:
 make_config:
 poudriere_distfiles: /usr/ports/distfiles
 poudriere_host: ftp://ftp.freebsd.org
-poudriere_url_base: http://localhost/
 poudriere_zfs: true
 poudriere_zpool: zroot
 poudriere_zrootfs: /usr/local/poudriere
