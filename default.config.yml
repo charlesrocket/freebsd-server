@@ -1,11 +1,10 @@
 ---
 # Dotfiles
-dotfiles_repo: "https://github.com/charlesrocket/dotfiles.git"
+dotfiles_repo: https://github.com/charlesrocket/dotfiles.git
 dotfiles_repo_version: fbsd-server
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_force: true
-dotfiles_repo_local_destination: "~/src/dotfiles"
-dotfiles_home: "~"
+dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_files:
   - .config/mc/ini
   - .gitconfig
@@ -23,7 +22,7 @@ poudriere: false
 set_security_level: false
 
 bastille_zfs_enable: "YES"
-bastille_zfs_zpool: "zroot"
+bastille_zfs_zpool: zroot
 hostname:
 make_config:
 poudriere_distfiles: /usr/ports/distfiles
@@ -35,7 +34,7 @@ poudriere_zpool: zroot
 poudriere_zrootfs: /usr/local/poudriere
 security_level: 3
 sshd_enable: "YES"
-timezone: "America/Los_Angeles"
+timezone: America/Los_Angeles
 
 # Keep packages up to date
 upgrade_packages: true
