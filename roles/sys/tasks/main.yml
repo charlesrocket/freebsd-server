@@ -10,6 +10,7 @@
 - name: Set timezone
   community.general.timezone:
     name: "{{ timezone }}"
+  when: timezone
 
 - name: Tune TTYs
   ansible.builtin.replace:
