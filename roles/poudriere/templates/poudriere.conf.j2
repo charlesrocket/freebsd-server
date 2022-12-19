@@ -1,8 +1,8 @@
-NO_ZFS={{ poudriere_zfs | ternary('no', 'yes') }}
-ZPOOL={{ poudriere_zpool }}
-ZROOTFS={{ poudriere_zrootfs }}
-
 FREEBSD_HOST={{ poudriere_host }}
+
+{{ poudriere_zfs | ternary('', 'NO_ZFS=yes') }}
+{{ poudriere_zfs | ternary('ZPOOL=' + poudriere_zpool, '') }}
+{{ poudriere_zfs | ternary('ZROOTFS=' + poudriere_zrootfs, '') }}
 
 CCACHE_DIR=/var/cache/ccache
 
