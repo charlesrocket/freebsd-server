@@ -1,4 +1,5 @@
 FREEBSD_HOST={{ poudriere_host }}
+BASEFS=/usr/local/poudriere
 
 {{ poudriere_zfs | ternary('', 'NO_ZFS=yes') }}
 {{ poudriere_zfs | ternary('ZPOOL=' + poudriere_zpool, '') }}
