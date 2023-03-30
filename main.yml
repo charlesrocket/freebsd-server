@@ -25,10 +25,10 @@
 
     - role: common
 
-    - role: charlesrocket.git
+    - role: charlesrocket.essential.git
       when: git or poudriere
 
-    - role: charlesrocket.dotfiles
+    - role: charlesrocket.essential.dotfiles
       when: dotfiles
 
     - role: acct
