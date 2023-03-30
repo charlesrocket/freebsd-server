@@ -1,12 +1,5 @@
 ---
 
-- name: Upgrade installed packages
-  community.general.pkgng:
-    name: "*"
-    state: latest
-  become: true
-  when: upgrade_packages
-
 - name: Copy Lynis profile
   ansible.builtin.copy:
     src: server.prf

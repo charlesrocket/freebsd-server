@@ -42,3 +42,13 @@
     - role: poudriere
       when: poudriere
       become: true
+
+  post_tasks:
+    - name: Upgrade installed packages
+      community.general.pkgng:
+        name: "*"
+        state: latest
+        autoremove: true
+        cached: false
+      become: true
+      when: upgrade_packages
