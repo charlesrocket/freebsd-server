@@ -5,7 +5,7 @@
     src: server.prf
     dest: /usr/local/etc/lynis/server.prf
     owner: root
-    mode: 0644
+    mode: '0644'
   become: true
 
 - name: Copy MOTD
@@ -13,7 +13,7 @@
     src: motd.sh
     dest: /etc/motd.sh
     owner: root
-    mode: 0700
+    mode: '0700'
   become: true
 
 - name: Install MOTD
@@ -42,6 +42,6 @@
     dest: /etc/make.conf
     owner: root
     group: wheel
-    mode: 0644
+    mode: '0644'
   become: true
   when: make_config
